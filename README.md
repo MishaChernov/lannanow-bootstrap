@@ -1,2 +1,0 @@
-# lannanow-bootstrap
-lannanow-bootstrap
