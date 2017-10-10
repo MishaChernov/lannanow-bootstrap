@@ -1,0 +1,204 @@
+.populars {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  align-content: center;
+  margin-top: 70px;
+}
+
+.populars__cards {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: space-around;
+  align-items: stretch;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.populars__card {
+  min-width: 280px;
+  margin: 0;
+  padding-left: 0;
+  padding-right: 0;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.populars__subtitle {
+  position: relative;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 700;
+  font-family: $secondary-font-family;
+  text-align: center;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -20px;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 5px;
+    border-radius: 2px;
+    background-color: $primary-btn-color;
+  }
+}
+
+.populars__subtitle--first {
+  &::before {
+    background-color: #dc51a0;
+  }
+}
+
+.populars__subtitle--second {
+  &::before {
+    background-color: #8d6fcf;
+  }
+}
+
+.populars__subtitle--third {
+  &::before {
+    background-color: #8bd623;
+  }
+}
+
+.populars__name {
+  text-transform: uppercase;
+  margin-top: 5px;
+  text-align: center;
+}
+
+.populars__name--first {
+  color: #dc51a0;
+}
+
+.populars__name--second {
+  color: #8d6fcf;
+}
+
+.populars__name--third {
+  color: #8bd623;
+}
+
+.populars__text {
+  margin-left: 15px;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 23px;
+}
+
+.popular__list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.popular__item {
+  position: relative;
+  padding-top: 20px;
+  padding-bottom: 40px;
+  padding-left: 70px;
+  border-top: 1px solid #eaeaea;
+
+  font-size: 18px;
+  font-family: $primary-font-family;
+
+  &::before {
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+
+    background-size: contain;
+    @include set-icon(url("../img/3dwall01.jpg"), 50px, 50px);
+  }
+}
+
+.popular__list--first .popular__item {
+  &:nth-child(1) {
+    &::before {
+      @include set-icon(url("../img/3dwall01.jpg"), 50px, 50px);
+    }
+  }
+  &:nth-child(2) {
+    &::before {
+      @include set-icon(url("../img/3dwall02.jpg"), 50px, 50px);
+    }
+  }
+  &:nth-child(3) {
+    &::before {
+      @include set-icon(url("../img/3dwall03.jpg"), 50px, 50px);
+    }
+  }
+}
+
+.popular__list--second .popular__item {
+  &:nth-child(1) {
+    &::before {
+      @include set-icon(url("../img/3dwall04.jpg"), 50px, 50px);
+    }
+  }
+  &:nth-child(2) {
+    &::before {
+      @include set-icon(url("../img/3dwall05.jpg"), 50px, 50px);
+    }
+  }
+  &:nth-child(3) {
+    &::before {
+      @include set-icon(url("../img/3dwall06.jpg"), 50px, 50px);
+    }
+  }
+}
+
+
+.popular__list--third .popular__item {
+  &:nth-child(1) {
+    &::before {
+      @include set-icon(url("../img/3dwall07.jpg"), 50px, 50px);
+    }
+  }
+  &:nth-child(2) {
+    &::before {
+      @include set-icon(url("../img/3dwall08.jpg"), 50px, 50px);
+    }
+  }
+  &:nth-child(3) {
+    &::before {
+      @include set-icon(url("../img/3dwall09.jpg"), 50px, 50px);
+    }
+  }
+}
+
+.popular__btn {
+  display: block;
+  margin-top: auto;
+  text-align: center;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 20px 5px;
+  width: auto;
+  background-color: #3bbea4;
+
+  @include hover-effects;
+}
+
+.populars__img {
+  margin: 0 auto;
+}
+
+@media (min-width: 500px) {
+  .populars__card {
+    margin-top: 20px;
+    width: 300px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .populars__name {
+    margin-left: 15px;
+    text-align: left;
+  }
+}

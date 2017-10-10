@@ -1,0 +1,27 @@
+.advanced {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.advanced__item {
+  display: block;
+  flex: 1;
+  height: 153px;
+  margin: 0 10px;
+  margin-top: 20px;
+  min-width: 290px;
+  background-repeat: no-repeat;
+  background-position: center;
+  font-size: 0;
+  @include hover-effects;
+  &--first {
+    background-position: right;
+    background-image: url("../img/layer7.jpg");
+  }
+  &--second {
+    background-position: left;
+    background-image: url("../img/layer8.jpg");
+  }
+}

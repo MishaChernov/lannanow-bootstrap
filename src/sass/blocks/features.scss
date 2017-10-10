@@ -1,0 +1,53 @@
+.features {
+  margin-top: 60px;
+}
+
+.features__title {
+  font-family: $secondary-font-family;
+  font-size: 33px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.features__wrapper {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: baseline;
+}
+
+.features__subtitle {
+  color: #70cbda;
+  text-transform: uppercase;
+  padding-left: 10px;
+}
+
+.features__text {
+  color: #000000;
+  font-size: 17px;
+  padding: 0 10px;
+}
+
+.features__card {
+  max-width: 274px;
+}
+
+@media (min-width: 380px) {
+  .features__img {
+    width: 300px;
+    margin: 0 auto;
+  }
+  .features__text {
+    color: #000000;
+    font-size: 17px;
+    padding: 0 10px;
+  }
+}
+
+@media (min-width: 500px) {
+
+  .features__text {
+    padding-left: 0 10px;
+  }
+}

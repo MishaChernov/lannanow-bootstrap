@@ -1,0 +1,43 @@
+.item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  border-top: 4px solid #8560a8;
+  padding: 0;
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+
+.item__img {
+  max-width: 260px;
+  margin: 5px 5px;
+  flex: 1;
+  padding: 0;
+}
+
+.item__wrapper {
+  flex: 1;
+  min-width: 270px;
+  margin-top: 10px;
+  text-align: center;
+  padding: 0;
+}
+
+.item__description {
+  color: $primary-btn-color;
+  line-height: 25px;
+  font-size: 18px;
+  padding-right: 50px;
+}
+
+.item__posted {
+  font-size: 15px;
+}
+
+@media (min-width: 663px) {
+  .item__wrapper {
+    text-align: left;
+  }
+}

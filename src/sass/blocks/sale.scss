@@ -1,0 +1,38 @@
+.sale {
+  flex: 1;
+  margin-left: auto;
+  max-width: 365px;
+  min-width: 280px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.sale__title {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: $secondary-font-family;
+  font-size: 20px;
+  margin-bottom: 34px;
+  &::before {
+    content: "";
+    position: absolute;
+    top: -20px;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 5px;
+    border-radius: 2px;
+    background-color: #0072bc;
+  }
+}
+
+.sale__link {
+  display: block;
+  color: $primary-btn-color;
+  text-decoration: none;
+  margin: 10px 0px;
+
+  @include hover-effects;
+}
