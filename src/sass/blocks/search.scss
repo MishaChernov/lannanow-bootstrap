@@ -99,7 +99,7 @@
   padding-bottom: 15px;
   height: 60px;
   box-sizing: border-box;
-  @include hover-effects;
+  cursor: pointer;
 
   &:disabled {
     opacity: 0.4;
