@@ -126,11 +126,11 @@
             </svg>
             Main
           </a>
-          <a class="main-menu__link" href="searchresults.html">
+          <a class="main-menu__link" href="#">
             <svg class="main-menu__icon" width="30" height="25">
               <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#house-3"></use>
             </svg>
-            Search
+            Lorem
           </a>
           <a class="main-menu__link" href="#">
             <svg class="main-menu__icon" width="30" height="25">
@@ -174,21 +174,24 @@
     </div>
     <form class="search" action="/">
       <div class="search__wrapper  container">
-        <label class="search__label  search__label--input  col-md-4">
-          <input class="search__input" type="text" placeholder="Fukuoka" required name="Fukuoka1">
-        </label>
-        <label class="search__label  search__label--input  col-md-4">
-          <input class="search__input" placeholder="Fukuoka" required name="Fukuoka2">
+        <label class="search__label  search__label--select  col-md-2">
+          <select class="search__select  search__select--first" required>
+            <option class="search__option  lorem1">Lorem</option>
+          </select>
         </label>
         <label class="search__label  search__label--select  col-md-2">
           <select class="search__select" required>
-            <option selected>1 aduit, 0 children</option>
-            <option>Lorem</option>
-            <option>Lorem</option>
-            <option>Lorem</option>
+            <option class="search__option  chiang-mai">Chiang Mai</option>
+            <option class="search__option" selected>Lorem</option>
           </select>
         </label>
-        <input class="search__btn  col-md-2" type="submit" value="Search" name="search">
+        <label class="search__label  search__label--select  col-md-2">
+          <select class="search__select  search__select--second" required disabled>
+            <option class="search__option  doi-saket">Doi Saket</option>
+            <option class="search__option  search__option--lorem" selected>Lorem</option>
+          </select>
+        </label>
+        <input class="search__btn  col-md-2" type="submit" value="Search" name="search" disabled>
       </div>
     </form>
   </header>

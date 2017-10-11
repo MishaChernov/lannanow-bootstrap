@@ -12,4 +12,9 @@
   &:visited {
     color: #000000;
   }
+  &:hover {
+    opacity: 1;
+    text-decoration: none;
+    color: inherit;
+  }
 }
