@@ -32,14 +32,19 @@ $(function functionName() {
       searchBtn.removeAttr('disabled');
     }
 
+    if ($('.search__select--first').val() != "Chiang Mai") {
+      $('.search__select--second').attr('disabled', 'true');
+      searchBtn.attr('disabled', 'true');
+    }
+
     $(".search__btn").click(function() {
       if ($('.search__select--second').val() == "Doi Saket") {
         window.open("searchresults.html");
       } else {
         alert('not-found');
+        return false;
       }
     });
-
   });
 
 
