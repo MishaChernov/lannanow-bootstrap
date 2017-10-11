@@ -29,27 +29,19 @@ $(function functionName() {
   $('.search__select').change(function() {
     if ($(this).val() == "Chiang Mai") {
       $('.search__select--second').removeAttr('disabled');
-    }
-    else if ($(this).val() != "Chiang Mai"){
-        $('.search__select--second').attr( 'disabled', 'true' );
-    }
-  });
-  $('.search__select--second').change(function() {
-    if ($(this).val() == "Doi Saket") {
       searchBtn.removeAttr('disabled');
-      $( ".search__btn" ).click(function() {
-        window.open("searchresults.html");
-      });
     }
-    else if ($(this).val() != "Doi Saket"){
-      searchBtn.attr( 'disabled', 'true' );
 
-      $( ".search__btn" ).click(function() {
-        event.preventDefault();
-        alert('pizdec');
-      });
-    }
+    $(".search__btn").click(function() {
+      if ($('.search__select--second').val() == "Doi Saket") {
+        window.open("searchresults.html");
+      } else {
+        alert('not-found');
+      }
+    });
+
   });
+
 
   $('.multiple-items').slick({
     infinite: true,
