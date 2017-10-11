@@ -172,36 +172,26 @@
       </div>
     </div>
 
-    <form class="search-result" action="/">
-      <div class="search-result__wrapper">
-        <input class="search-result__btn  col-md-3" type="submit" value="search property" name="Search property">
-        <label class="search-result__label  search-result__label--select  col-md-3">
-          <span class="search-result__label-text">BrandItem Align</span>
-          <select class="search-result__select" required>
-            <option selected>Left</option>
-            <option>Lorem</option>
-            <option>Lorem</option>
-            <option>Lorem</option>
+    <form class="search" action="/">
+      <div class="search__wrapper  container">
+        <label class="search__label  search__label--select  col-md-2">
+          <select class="search__select  search__select--first" required>
+            <option class="search__option  lorem1">Lorem</option>
           </select>
         </label>
-        <label class="search-result__label  search-result__label--select  col-md-3">
-          <span class="search-result__label-text">LeftItem Align</span>
-          <select class="search-result__select" required>
-            <option selected>Left</option>
-            <option>Lorem</option>
-            <option>Lorem</option>
-            <option>Lorem</option>
+        <label class="search__label  search__label--select  col-md-2">
+          <select class="search__select" required>
+            <option class="search__option  ">Lorem1</option>
+            <option class="search__option" selected>Lorem</option>
           </select>
         </label>
-        <label class="search-result__label  search-result__label--select  col-md-3">
-          <span class="search-result__label-text">RightItem Align</span>
-          <select class="search-result__select" required>
-            <option selected>Left </option>
-            <option>Lorem</option>
-            <option>Lorem</option>
-            <option>Lorem</option>
+        <label class="search__label  search__label--select  col-md-2">
+          <select class="search__select  search__select--second" required disabled>
+            <option class="search__option  ">Lorem1</option>
+            <option class="search__option  search__option--lorem" selected>Lorem</option>
           </select>
         </label>
+        <input class="search__btn  col-md-2" type="submit" value="Search" name="search" disabled>
       </div>
     </form>
   </header>
