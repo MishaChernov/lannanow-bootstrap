@@ -9,6 +9,12 @@
 .content__title {
   font-family: $secondary-font-family;
   font-size: 23px;
+
+  &--found {
+    font-size: 30px;
+    color: #78787c;
+    margin-left: 10px;
+  }
 }
 
 .content__text {
@@ -32,6 +38,13 @@
   text-decoration: none;
   color: $primary-btn-color;
   @include hover-effects;
+}
+
+.content__posted {
+  &--found {
+    font-size: 16px;
+    margin-left: 10px;
+  }
 }
 
 @media (min-width: 1200px) {

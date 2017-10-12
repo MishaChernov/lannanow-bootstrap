@@ -1,3 +1,31 @@
+.breadcrumbs--found .breadcrumbs__link {
+  font-size: 18px;
+  color: gray;;
+
+  &--home {
+    display: block;
+    width: 20px;
+    height: 20px;
+    margin-bottom: 6px;
+    fill: gray;
+  }
+}
+
+.breadcrumbs--found .breadcrumbs__item {
+  margin-right: 35px;
+  &::after,
+  &::before {
+    content: "";
+    position: absolute;
+    top: 14px;
+    right: -25px;
+  }
+  &::after {
+    top: 9px;
+    transform: rotate(30deg);
+  }
+}
+
 .breadcrumbs__item {
   position: relative;
   display: inline-block;

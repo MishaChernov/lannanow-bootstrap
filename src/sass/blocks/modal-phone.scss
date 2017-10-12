@@ -1,0 +1,107 @@
+.modal-phone {
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  display: none;
+  transform: translateX(-50%);
+  z-index: 999;
+  background-color: #59afe1;
+  max-width: 300px;
+  min-height: 256px;
+  box-sizing: border-box;
+  transition: transform 0.3s ease-out 0s;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  overflow: hidden;
+  box-sizing: border-box;
+  text-align: center;
+  color: #ffffff;
+
+  &--close {
+    display: none;
+  }
+  &--open {
+    display: block;
+  }
+}
+
+.modal-phone__wrapper  {
+  padding: 50px;
+  padding-bottom: 0;
+}
+
+.modal-phone__subtext {
+  background-color: #ebeff1;
+  width: 100%;
+  display: block;
+  margin: 0;
+  padding: 20px;
+}
+
+
+.modal-phone__text {
+  position: relative;
+  color: #ffffff;
+  font-size: 18px;
+  margin-top: 90px;
+
+  &::before {
+    top: -80px;
+    left: 50%;
+    transform: translateX(-50%);
+    @include set-icon(url("../img/svg/call.svg"), 50px, 50px);
+    background-size: contain;
+  }
+}
+
+.modal-phone__phone {
+  display: block;
+  color: #ffffff;
+  margin-bottom: 30px;
+  font-size: 40px;
+}
+
+.modal-phone__close {
+  position: relative;
+  background: #2a5887 none repeat scroll 0 0;
+  height: 50px;
+  border-bottom-left-radius: 30px;
+  margin-top: 0;
+  opacity: 1;
+  position: absolute;
+  right: 0;
+  text-shadow: none;
+  top: 0;
+  width: 42px;
+  color: #fff;
+  border: none;
+  outline: none;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+  font-size: 0;
+  @include hover-effects;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 20px;
+    left: 14px;
+    transform: rotate(-35deg);
+    display: block;
+    width: 15px;
+    height: 4px;
+    border-radius: 2px;
+    background-color: #ffffff;
+  }
+  &::after {
+    transform: rotate(35deg);
+  }
+}
+
+
+@media (min-width: 500px) {
+  .modal-phone {
+    max-width: 600px;
+  }
+}
