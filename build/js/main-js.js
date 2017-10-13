@@ -28,18 +28,33 @@ $(function functionName() {
       $('.modal').removeClass('modal--open');
     });
 
-    $('.callback__btn--call').click(function() {
-      $('body').addClass('modal-bg');
-      $('.modal-phone').addClass('modal-phone--open');
-    });
+    if(some >= $('.modal').height()) {
+      $('.callback__btn--email').click(function() {
+        $('body').addClass('modal-bg');
+        $('.modal').addClass('modal--open');
+      });
+    } else {
+      $('.close').click(function() {
+        $('body').removeClass('modal-bg');
+        $('.modal').removeClass('modal--open');
+      });
+    }
 
-    $('.modal-phone__close').click(function() {
-      $('body').removeClass('modal-bg');
-      $('.modal-phone').removeClass('modal-phone--open');
-    });
 
-    $('.modal').css({top: window.scrollY + 30});
-    $('.modal-phone').css({top: window.scrollY + 30});
+    // $('.modal').css({top: window.scrollY + 30});
+    // $('.modal-phone').css({top: window.scrollY + 30});
+
+    if(some >= $('.modal-phone').height()) {
+      $('.callback__btn--call').click(function() {
+        $('body').addClass('modal-bg');
+        $('.modal-phone').addClass('modal-phone--open');
+      });
+    } else {
+      $('.modal-phone__close').click(function() {
+        $('body').removeClass('modal-bg');
+        $('.modal-phone').removeClass('modal-phone--open');
+      });
+    }
 
     if(some >= callback.height() + headerHeight + 60 ) {
       $('.callback--footer').addClass("callback--fix");
