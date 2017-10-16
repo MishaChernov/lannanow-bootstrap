@@ -13,6 +13,11 @@
 </head>
 <body class="">
   <svg style="display:none">
+    <symbol viewBox="0 0 512 512" id="map-flag">
+      <path d="M256,0C153.755,0,70.573,83.182,70.573,185.426c0,126.888,165.939,313.167,173.004,321.035
+        c6.636,7.391,18.222,7.378,24.846,0c7.065-7.868,173.004-194.147,173.004-321.035C441.425,83.182,358.244,0,256,0z M256,278.719
+        c-51.442,0-93.292-41.851-93.292-93.293S204.559,92.134,256,92.134s93.291,41.851,93.291,93.293S307.441,278.719,256,278.719z"/>
+    </symbol>
     <symbol viewBox="0 0 60 60" id="house-1">
       <path d="M57.821,27.693c1.195-1.287,1.033-3.32-0.35-4.402L32.041,3.396L30,1.5l-2.041,1.896L2.529,23.291
     		c-1.383,1.082-1.545,3.115-0.35,4.402c1.055,1.136,2.801,1.281,4.028,0.335L30,9.688l23.792,18.34
@@ -252,10 +257,23 @@
     <section class="title-post  col-md-12">
       <div class="container">
         <div class="callback  callback--footer">
-          <h2 class="title-post__title">Title of the Post</h2>
-          <button class="callback__btn  callback__btn--call" type="button" name="call-back">Call back</button>
-          <button class="callback__btn  callback__btn--email" type="button" name="email">Send Email</button>
-          <button class="callback__btn  callback__btn--brochure" type="button" name="brochure">Request for brochure</button>
+          <div class="container">
+            <div class="callback__wrapper  col-md-6">
+              <h2 class="title-post__title">Title of the Post</h2>
+              <p class="callback__address">
+                <svg class="callback__icon  callback__icon--red" width="13" height="13">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#map-flag"></use>
+                </svg>
+                Studio 502 Flourmill Studios, 3 Gladione Street, Newtown NSW 2042
+              </p>
+            </div>
+
+            <div class="callback__btns  coll-md-6">
+              <button class="callback__btn  callback__btn--email  col-md-2" type="button" name="email">Message</button>
+              <button class="callback__btn  callback__btn--call  col-md-2" type="button" name="call-back">Call Today</button>
+              <button class="callback__btn  callback__btn--brochure  col-md-2" type="button" name="brochure">Add Line</button>
+            </div>
+          </div>
         </div>
       </div>
     </section>
