@@ -30,7 +30,7 @@ $(function functionName() {
 
     if(some >= $('.modal').height()) {
       $('.callback__btn--email').click(function() {
-        window.scrollY = 0;
+        document.documentElement.scrollTop = 0;
         $('body').addClass('modal-bg');
         $('.modal').addClass('modal--open');
       });
@@ -47,7 +47,7 @@ $(function functionName() {
 
     if(some >= $('.modal-phone').height()) {
       $('.callback__btn--call').click(function() {
-        window.scrollY = 0;
+        document.documentElement.scrollTop = 0;
         $('body').addClass('modal-bg');
         $('.modal-phone').addClass('modal-phone--open');
       });

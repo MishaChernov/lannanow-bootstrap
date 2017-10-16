@@ -29,7 +29,7 @@
 .callback__btn {
   display: block;
   box-sizing: border-box;
-  min-width: 180px;
+  min-width: 176px;
   max-width: 200px;
   box-sizing: border-box;
   padding: 10px 10px;
@@ -76,7 +76,7 @@
 
 .callback__address {
   margin: 0;
-  color: #49555d;
+  color: #ffffff;
 }
 
 .callback__icon {
@@ -127,5 +127,11 @@
   }
   .callback__btn {
     font-size: 17px;
+  }
+  .callback__address {
+    color: #49555d;
+  }
+  .title-post__title {
+    color: #000000;
   }
 }
